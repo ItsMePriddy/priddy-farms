@@ -1,65 +1,202 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import {Button} from "@astryxdesign/core/Button";
+import {Card} from "@astryxdesign/core/Card";
+import {ClickableCard} from "@astryxdesign/core/ClickableCard";
+import {Grid} from "@astryxdesign/core/Grid";
+import {Heading} from "@astryxdesign/core/Heading";
+import {Section} from "@astryxdesign/core/Section";
+import {HStack, VStack} from "@astryxdesign/core/Stack";
+import {Text} from "@astryxdesign/core/Text";
+import {MediaTheme} from "@astryxdesign/core/theme";
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <VStack gap={0}>
+      {/* ── Hero Section ── */}
+      <Section
+        padding={0}
+        variant="transparent"
+        className="relative min-h-[75vh] flex items-center bg-gradient-to-br from-farm-brown via-farm-amber to-farm-gold"
+      >
+        <Section padding={0} variant="transparent" className="absolute inset-0 bg-black/30" />
+        <Section padding={0} variant="transparent" className="relative z-10 w-full">
+          <MediaTheme mode="dark">
+            <VStack gap={6} hAlign="center" padding={8}>
+              <Text type="label" color="inherit" justify="center" className="tracking-[0.2em] uppercase">
+                Welcome to
+              </Text>
+              <Heading level={1} type="display-1" justify="center" color="inherit">
+                Priddy Farms
+              </Heading>
+              <Text type="large" color="inherit" justify="center">
+                Two Locations. Fun for All Ages.
+              </Text>
+              <Button
+                label="Plan Your Visit"
+                variant="primary"
+                size="lg"
+                onClick={() => { window.location.href = "/visit"; }}
+              />
+            </VStack>
+          </MediaTheme>
+        </Section>
+      </Section>
+
+      {/* ── Two Location Cards ── */}
+      <Section variant="section" padding={8}>
+        <VStack gap={6} hAlign="center">
+          <VStack gap={2} hAlign="center" maxWidth={640}>
+            <Heading level={2} justify="center" color="primary">
+              Choose Your Location
+            </Heading>
+            <Text type="body" justify="center" color="secondary">
+              Two farms, each with its own charm. Find the perfect adventure for your family.
+            </Text>
+          </VStack>
+          <Grid columns={{minWidth: 440}} gap={6} maxWidth={960}>
+            {/* Millington Card */}
+            <Card padding={0} variant="default">
+              <VStack gap={0}>
+                <Section
+                  padding={0}
+                  variant="transparent"
+                  className="h-48 bg-gradient-to-br from-farm-gold via-farm-amber to-farm-brown flex items-center justify-center"
+                >
+                  <Text as="span" type="display-1">🌽</Text>
+                </Section>
+                <VStack gap={3} padding={5}>
+                  <Text type="label" color="accent" className="font-bold uppercase tracking-wider text-xs">
+                    New — 50 Acres
+                  </Text>
+                  <Heading level={3}>Millington, TN</Heading>
+                  <VStack gap={1} as="ul" className="list-none m-0 p-0">
+                    <Text as="li" type="body" color="secondary">🎃 Pumpkin Patch &amp; Corn Maze</Text>
+                    <Text as="li" type="body" color="secondary">🎄 Christmas Trees</Text>
+                    <Text as="li" type="body" color="secondary">☀️ Summer Camp</Text>
+                    <Text as="li" type="body" color="secondary">👻 Haunted Attraction</Text>
+                    <Text as="li" type="body" color="secondary">🎉 Company Picnics &amp; Family Reunions</Text>
+                  </VStack>
+                  <Button
+                    label="Learn More"
+                    variant="secondary"
+                    onClick={() => { window.location.href = "/millington"; }}
+                  />
+                </VStack>
+              </VStack>
+            </Card>
+
+            {/* Bartlett Card */}
+            <Card padding={0} variant="default">
+              <VStack gap={0}>
+                <Section
+                  padding={0}
+                  variant="transparent"
+                  className="h-48 bg-gradient-to-br from-farm-green via-farm-olive to-farm-cream flex items-center justify-center"
+                >
+                  <Text as="span" type="display-1">🎂</Text>
+                </Section>
+                <VStack gap={3} padding={5}>
+                  <Text type="label" color="accent" className="font-bold uppercase tracking-wider text-xs">
+                    Family Favorite
+                  </Text>
+                  <Heading level={3}>Bartlett, TN</Heading>
+                  <VStack gap={1} as="ul" className="list-none m-0 p-0">
+                    <Text as="li" type="body" color="secondary">🎂 Kids&apos; Birthday Parties</Text>
+                    <Text as="li" type="body" color="secondary">🎃 Pumpkin Patch &amp; Corn Maze</Text>
+                  </VStack>
+                  <Button
+                    label="Learn More"
+                    variant="secondary"
+                    onClick={() => { window.location.href = "/bartlett"; }}
+                  />
+                </VStack>
+              </VStack>
+            </Card>
+          </Grid>
+        </VStack>
+      </Section>
+
+      {/* ── Seasonal Highlights ── */}
+      <Section variant="muted" padding={8}>
+        <VStack gap={6} hAlign="center">
+          <VStack gap={2} hAlign="center" maxWidth={640}>
+            <Heading level={2} justify="center" color="primary">
+              Something for Every Season
+            </Heading>
+            <Text type="body" justify="center" color="secondary">
+              From fall festivals to winter wonderlands, there&apos;s always something
+              happening on the farm.
+            </Text>
+          </VStack>
+          <Grid columns={{minWidth: 300}} gap={6} maxWidth={1000}>
+            {/* Fall Festival */}
+            <ClickableCard label="Fall Festival — pumpkin patch and corn maze" href="/pumpkin-patch" padding={0} variant="default">
+              <VStack gap={0}>
+                <Section padding={0} variant="transparent" className="h-48 bg-gradient-to-br from-orange-600 via-amber-500 to-yellow-400 flex items-center justify-center">
+                  <Text as="span" type="display-1">🎃</Text>
+                </Section>
+                <VStack gap={2} padding={5} hAlign="center">
+                  <Heading level={3} justify="center">Fall Festival</Heading>
+                  <Text type="body" justify="center" color="secondary">
+                    Pumpkin patch, 5-acre corn maze, hayrides, and more. Sept 19 – Nov 9.
+                  </Text>
+                </VStack>
+              </VStack>
+            </ClickableCard>
+
+            {/* Christmas Trees */}
+            <ClickableCard label="Christmas Trees — cut your own tree" href="/christmas-trees" padding={0} variant="default">
+              <VStack gap={0}>
+                <Section padding={0} variant="transparent" className="h-48 bg-gradient-to-br from-green-800 via-green-600 to-green-400 flex items-center justify-center">
+                  <Text as="span" type="display-1">🎄</Text>
+                </Section>
+                <VStack gap={2} padding={5} hAlign="center">
+                  <Heading level={3} justify="center">Christmas Trees</Heading>
+                  <Text type="body" justify="center" color="secondary">
+                    Cut your own tree and start a new family tradition. Opening dates coming soon.
+                  </Text>
+                </VStack>
+              </VStack>
+            </ClickableCard>
+
+            {/* Summer Camp */}
+            <ClickableCard label="Summer Camp — kids' adventures on the farm" href="/summer-camp" padding={0} variant="default">
+              <VStack gap={0}>
+                <Section padding={0} variant="transparent" className="h-48 bg-gradient-to-br from-farm-green via-yellow-400 to-amber-300 flex items-center justify-center">
+                  <Text as="span" type="display-1">☀️</Text>
+                </Section>
+                <VStack gap={2} padding={5} hAlign="center">
+                  <Heading level={3} justify="center">Summer Camp</Heading>
+                  <Text type="body" justify="center" color="secondary">
+                    Week-long adventures for kids on the farm. June 1–4 &amp; June 8–11.
+                  </Text>
+                </VStack>
+              </VStack>
+            </ClickableCard>
+          </Grid>
+        </VStack>
+      </Section>
+
+      {/* ── CTA Banner ── */}
+      <Section padding={8} variant="transparent" className="bg-gradient-to-br from-farm-brown via-farm-amber to-farm-gold">
+        <MediaTheme mode="dark">
+          <VStack gap={4} hAlign="center">
+            <Heading level={2} justify="center" color="inherit">
+              Ready for a Farm Adventure?
+            </Heading>
+            <Text type="large" justify="center" color="inherit">
+              Bring the whole family and make memories that last a lifetime.
+            </Text>
+            <Button
+              label="Get Directions"
+              variant="primary"
+              size="lg"
+              onClick={() => { window.location.href = "/visit"; }}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+          </VStack>
+        </MediaTheme>
+      </Section>
+    </VStack>
   );
 }

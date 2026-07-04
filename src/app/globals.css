@@ -1,26 +1,25 @@
-@import "tailwindcss";
+/* Astryx + Tailwind CSS layer ordering */
+@layer reset, theme, base, astryx-base, astryx-theme, components, utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Astryx reset and core CSS */
+@import "@astryxdesign/core/reset.css" layer(reset);
+@import "@astryxdesign/core/astryx.css" layer(astryx-base);
 
+/* Neutral theme CSS */
+@import "@astryxdesign/theme-neutral/theme.css" layer(astryx-theme);
+
+/* Tailwind v4 */
+@import "tailwindcss" layer(utilities);
+
+/* ── Priddy Farms brand palette ── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-farm-dark: #2C1810;
+  --color-farm-brown: #5C3A21;
+  --color-farm-amber: #B8661E;
+  --color-farm-gold: #D4943B;
+  --color-farm-wheat: #E8C98A;
+  --color-farm-cream: #FFF8EB;
+  --color-farm-green: #4A7C3F;
+  --color-farm-olive: #6B8E4E;
+  --color-sunlit-green: #5A9E3E;
 }
