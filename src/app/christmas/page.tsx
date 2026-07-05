@@ -4,12 +4,12 @@ import '@/components/image-slot';
 
 export default function ChristmasPage() {
   return (
-    <div style={{ fontFamily: "'Nunito Sans', sans-serif", color: "#33261A", background: "#2F4A33", minHeight: "100vh" }}>
+    <div style={{ fontFamily: "'Nunito Sans', sans-serif", color: "#FBF3E0", background: "#2F4A33", minHeight: "100vh" }}>
       {/* Hero */}
       <section data-screen-label="Christmas hero" style={{ textAlign: "center", padding: "clamp(44px, 8vw, 72px) 20px 12px" }}>
-        <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: "clamp(24px, 4vw, 32px)", color: "#2F4A33" }}>the most wonderful time on the farm</div>
+        <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: "clamp(24px, 4vw, 32px)", color: "#E8B96A" }}>the most wonderful time on the farm</div>
         <h1 style={{ fontFamily: "Besley, serif", fontWeight: 800, fontSize: "clamp(36px, 6.5vw, 60px)", lineHeight: 1.08, margin: "10px auto 16px", maxWidth: 720, textWrap: "balance" }}>Christmas at the farm</h1>
-        <p style={{ fontSize: "clamp(16px, 2.2vw, 19px)", lineHeight: 1.6, color: "#6B5843", maxWidth: 600, margin: "0 auto" }}>
+        <p style={{ fontSize: "clamp(16px, 2.2vw, 19px)", lineHeight: 1.6, color: "rgba(251, 243, 224, 0.88)", maxWidth: 600, margin: "0 auto" }}>
           Fresh-cut trees up to 12 feet, handmade wreaths and garland, and that evergreen smell you can&apos;t get from a box in the attic.
         </p>
         <div style={{ display: "inline-block", background: "#2F4A33", color: "#FBF3E0", fontWeight: 800, fontSize: 15, padding: "10px 22px", borderRadius: 999, marginTop: 22 }}>
@@ -22,7 +22,7 @@ export default function ChristmasPage() {
       <section data-screen-label="Christmas offerings" style={{ padding: "clamp(40px, 7vw, 64px) 20px" }}>
         <div style={{ maxWidth: 1080, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 26 }}>
-            <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: 26, color: "#2F4A33" }}>fresh from the farm</div>
+            <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: 26, color: "#E8B96A" }}>fresh from the farm</div>
             <h2 style={{ fontFamily: "Besley, serif", fontWeight: 800, fontSize: "clamp(28px, 4.5vw, 40px)", margin: "4px 0 0" }}>Everything for the holidays</h2>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 18 }}>
@@ -73,8 +73,8 @@ export default function ChristmasPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: 22, alignItems: "center" }}>
             <div>
               <h2 style={{ fontFamily: "Besley, serif", fontWeight: 800, fontSize: "clamp(28px, 4vw, 36px)", margin: "0 0 16px" }}>Find your tree at Bartlett</h2>
-              <p style={{ fontSize: 16, lineHeight: 1.65, color: "#4A3A29", margin: "0 0 14px" }}>Our Christmas tree lot is at the Bartlett location. Come browse, pick your tree, and we&rsquo;ll help you load it up.</p>
-              <div style={{ color: "#6B5843", fontSize: 15.5, lineHeight: 1.6, marginBottom: 16 }}>
+              <p style={{ fontSize: 16, lineHeight: 1.65, color: "rgba(251, 243, 224, 0.88)", margin: "0 0 14px" }}>Our Christmas tree lot is at the Bartlett location. Come browse, pick your tree, and we&rsquo;ll help you load it up.</p>
+              <div style={{ color: "rgba(251, 243, 224, 0.7)", fontSize: 15.5, lineHeight: 1.6, marginBottom: 16 }}>
                 4595 N. Germantown Rd., Arlington, TN 38002<br />
                 <a href="tel:9013590800" style={{ color: "#8A3324", fontWeight: 800, textDecoration: "none" }}>(901) 359-0800</a>
               </div>

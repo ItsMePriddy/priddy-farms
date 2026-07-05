@@ -1,12 +1,12 @@
 import '@/components/image-slot';
 export default function FallFestivalPage() {
   return (
-    <div style={{ fontFamily: "'Nunito Sans', sans-serif", color: "#33261A", background: "#9C470B", minHeight: "100vh" }}>
+    <div style={{ fontFamily: "'Nunito Sans', sans-serif", color: "#FBF3E0", background: "#9C470B", minHeight: "100vh" }}>
       {/* Hero */}
       <section id="top" data-screen-label="Fall hero" style={{ textAlign: "center", padding: "clamp(44px, 8vw, 72px) 20px 12px" }}>
-        <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: "clamp(24px, 4vw, 32px)", color: "#C05F17" }}>sweater weather is farm weather</div>
+        <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: "clamp(24px, 4vw, 32px)", color: "#E8B96A" }}>sweater weather is farm weather</div>
         <h1 style={{ fontFamily: "Besley, serif", fontWeight: 800, fontSize: "clamp(36px, 6.5vw, 60px)", lineHeight: 1.08, margin: "10px auto 16px", maxWidth: 720, textWrap: "balance" }}>Fall Festival</h1>
-        <p style={{ fontSize: "clamp(16px, 2.2vw, 19px)", lineHeight: 1.6, color: "#6B5843", maxWidth: 600, margin: "0 auto" }}>September 19 through November 8 at both farms. Pick your pumpkin, ride the hayride, get lost in the maze — and come hungry.</p>
+        <p style={{ fontSize: "clamp(16px, 2.2vw, 19px)", lineHeight: 1.6, color: "rgba(251, 243, 224, 0.88)", maxWidth: 600, margin: "0 auto" }}>September 19 through November 8 at both farms. Pick your pumpkin, ride the hayride, get lost in the maze — and come hungry.</p>
         <div style={{ display: "flex", justifyContent: "center", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
           <a href="/visit" style={{ display: "inline-block", background: "#8A3324", color: "#FBF3E0", textDecoration: "none", fontWeight: 800, fontSize: 16, padding: "14px 26px", borderRadius: 999 }}>Hours &amp; directions</a>
           <a href="#haunted" style={{ display: "inline-block", background: "#241B12", color: "#FBF3E0", textDecoration: "none", fontWeight: 800, fontSize: 16, padding: "14px 26px", borderRadius: 999 }}>Haunted nights →</a>
@@ -18,7 +18,7 @@ export default function FallFestivalPage() {
       <section data-screen-label="Fall activities" style={{ padding: "clamp(40px, 7vw, 64px) 20px" }}>
         <div style={{ maxWidth: 1080, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 26 }}>
-            <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: 26, color: "#C05F17" }}>so much to do</div>
+            <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: 26, color: "#E8B96A" }}>so much to do</div>
             <h2 style={{ fontFamily: "Besley, serif", fontWeight: 800, fontSize: "clamp(28px, 4.5vw, 40px)", margin: "4px 0 0" }}>Out in the patch</h2>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 18 }}>
@@ -46,12 +46,12 @@ export default function FallFestivalPage() {
       <section id="haunted" data-screen-label="Haunted attraction" style={{ padding: "clamp(40px, 7vw, 64px) 20px" }}>
         <div style={{ maxWidth: 1080, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 26 }}>
-            <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: 26, color: "#C05F17" }}>if you dare</div>
+            <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: 26, color: "#E8B96A" }}>if you dare</div>
             <h2 style={{ fontFamily: "Besley, serif", fontWeight: 800, fontSize: "clamp(28px, 4.5vw, 40px)", margin: "4px 0 0" }}>After dark</h2>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: 18 }}>
             <div style={{ background: "#241B12", color: "#FBF3E0", borderRadius: 20, padding: "clamp(26px, 5vw, 42px)", boxShadow: "0 3px 14px rgba(59,42,29,0.12)" }}>
-              <div style={{ fontSize: "12.5px", fontWeight: 800, letterSpacing: "0.1em", color: "#C05F17", marginBottom: 8 }}>WEEKENDS IN OCTOBER</div>
+              <div style={{ fontSize: "12.5px", fontWeight: 800, letterSpacing: "0.1em", color: "#E8B96A", marginBottom: 8 }}>WEEKENDS IN OCTOBER</div>
               <h3 style={{ fontFamily: "Besley, serif", fontWeight: 800, fontSize: 28, margin: "0 0 12px" }}>Haunted house &amp; woods trail</h3>
               <p style={{ fontSize: 16, lineHeight: 1.65, opacity: 0.9, margin: "0 0 16px" }}>The farm gets a little darker when the sun goes down. Our haunted house at Millington and the haunted woods trail at Bartlett open on weekends — for those who love a good scare.</p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 7, marginBottom: 20 }}>
