@@ -186,7 +186,7 @@ function PillButton({ href, label }: { href: string; label: string }) {
 
 export default function HomePage() {
   return (
-    <div>
+    <div style={{ background: "#FEFAF1", minHeight: "100vh" }}>
       {/* ════════════════════════════════════════════════
           1. HERO — centered, cream bg
          ════════════════════════════════════════════════ */}
