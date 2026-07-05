@@ -1,6 +1,6 @@
 "use client";
 
-import "@/components/image-slot";
+import ImageSlot from "@/components/ImageSlot";
 
 /* ─── Design palette ─── */
 const C = {
