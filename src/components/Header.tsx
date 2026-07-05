@@ -70,7 +70,7 @@ export default function Header() {
       >
         <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
           <img
-            src="https://lh5.ggpht.com/54wgMuGlrtKgMfVGnvJv1UM-YJAP8WsTJ52sLfZejZW1sJqEg6vW4YTOrmrQ1FPr5dG2KHLx_Wq2wVCKGYD_zQY11Q"
+            src={"/logo.png"}
             alt="Priddy Farms"
             style={{ height: 54, width: "auto", display: "block" }}
           />

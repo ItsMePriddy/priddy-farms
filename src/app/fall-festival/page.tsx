@@ -1,3 +1,4 @@
+import '@/components/image-slot';
 export default function FallFestivalPage() {
   return (
     <div style={{ fontFamily: "'Nunito Sans', sans-serif", color: "#33261A", background: "#F7EFDD", minHeight: "100vh" }}>
