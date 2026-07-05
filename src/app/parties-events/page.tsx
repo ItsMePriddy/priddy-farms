@@ -1,7 +1,7 @@
 import '@/components/image-slot';
 export default function PartiesEventsPage() {
   return (
-    <div style={{ fontFamily: "'Nunito Sans', sans-serif", color: "#33261A", background: "#FEF8F3", minHeight: "100vh" }}>
+    <div style={{ fontFamily: "'Nunito Sans', sans-serif", color: "#33261A", background: "#F7EFDD", minHeight: "100vh" }}>
       {/* Hero */}
       <section data-screen-label="Events hero" style={{ textAlign: "center", padding: "clamp(44px, 8vw, 72px) 20px 12px" }}>
         <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: "clamp(24px, 4vw, 32px)", color: "#DFA032" }}>celebrate farm-style</div>
