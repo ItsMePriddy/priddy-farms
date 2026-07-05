@@ -1,12 +1,12 @@
 import '@/components/image-slot';
 export default function FallFestivalPage() {
   return (
-    <div style={{ fontFamily: "'Nunito Sans', sans-serif", color: "#33261A", background: "#F7EFDD", minHeight: "100vh" }}>
+    <div style={{ fontFamily: "'Nunito Sans', sans-serif", color: "#33261A", background: "#FDF3E4", minHeight: "100vh" }}>
       {/* Hero */}
       <section id="top" data-screen-label="Fall hero" style={{ textAlign: "center", padding: "clamp(44px, 8vw, 72px) 20px 12px" }}>
         <div style={{ fontFamily: "Caveat, cursive", fontWeight: 700, fontSize: "clamp(24px, 4vw, 32px)", color: "#C05F17" }}>sweater weather is farm weather</div>
         <h1 style={{ fontFamily: "Besley, serif", fontWeight: 800, fontSize: "clamp(36px, 6.5vw, 60px)", lineHeight: 1.08, margin: "10px auto 16px", maxWidth: 720, textWrap: "balance" }}>Fall Festival</h1>
-        <p style={{ fontSize: "clamp(16px, 2.2vw, 19px)", lineHeight: 1.6, color: "#6B5843", maxWidth: 600, margin: "0 auto" }}>September 19 through October 31 at both farms. Pick your pumpkin, ride the hayride, get lost in the maze — and come hungry.</p>
+        <p style={{ fontSize: "clamp(16px, 2.2vw, 19px)", lineHeight: 1.6, color: "#6B5843", maxWidth: 600, margin: "0 auto" }}>September 19 through November 8 at both farms. Pick your pumpkin, ride the hayride, get lost in the maze — and come hungry.</p>
         <div style={{ display: "flex", justifyContent: "center", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
           <a href="/visit" style={{ display: "inline-block", background: "#8A3324", color: "#FBF3E0", textDecoration: "none", fontWeight: 800, fontSize: 16, padding: "14px 26px", borderRadius: 999 }}>Hours &amp; directions</a>
           <a href="#haunted" style={{ display: "inline-block", background: "#241B12", color: "#FBF3E0", textDecoration: "none", fontWeight: 800, fontSize: 16, padding: "14px 26px", borderRadius: 999 }}>Haunted nights →</a>
