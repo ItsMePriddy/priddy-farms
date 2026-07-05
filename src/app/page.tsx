@@ -71,11 +71,11 @@ export default function HomePage() {
                   </Text>
                   <Heading level={3}>Millington, TN</Heading>
                   <VStack gap={1} as="ul" className="list-none m-0 p-0">
-                    <Text as="li" type="body" color="secondary">🎃 Pumpkin Patch &amp; Corn Maze</Text>
-                    <Text as="li" type="body" color="secondary">🎄 Christmas Trees</Text>
-                    <Text as="li" type="body" color="secondary">☀️ Summer Camp</Text>
-                    <Text as="li" type="body" color="secondary">👻 Haunted Attraction</Text>
-                    <Text as="li" type="body" color="secondary">🎉 Company Picnics &amp; Family Reunions</Text>
+                    <Text as="div" type="body" color="secondary">🎃 Pumpkin Patch &amp; Corn Maze</Text>
+                    <Text as="div" type="body" color="secondary">🎄 Christmas Trees</Text>
+                    <Text as="div" type="body" color="secondary">☀️ Summer Camp</Text>
+                    <Text as="div" type="body" color="secondary">👻 Haunted Attraction</Text>
+                    <Text as="div" type="body" color="secondary">🎉 Company Picnics &amp; Family Reunions</Text>
                   </VStack>
                   <Button
                     label="Learn More"
@@ -102,8 +102,8 @@ export default function HomePage() {
                   </Text>
                   <Heading level={3}>Bartlett, TN</Heading>
                   <VStack gap={1} as="ul" className="list-none m-0 p-0">
-                    <Text as="li" type="body" color="secondary">🎂 Kids&apos; Birthday Parties</Text>
-                    <Text as="li" type="body" color="secondary">🎃 Pumpkin Patch &amp; Corn Maze</Text>
+                    <Text as="div" type="body" color="secondary">🎂 Kids&apos; Birthday Parties</Text>
+                    <Text as="div" type="body" color="secondary">🎃 Pumpkin Patch &amp; Corn Maze</Text>
                   </VStack>
                   <Button
                     label="Learn More"
