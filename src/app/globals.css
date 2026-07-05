@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Besley:wght@500;600;700;800&family=Caveat:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; }
-body { margin: 0; background: #F7EFDD; font-family: 'Nunito Sans', sans-serif; color: #33261A; }
+body { margin: 0; background: #8A3324; font-family: 'Nunito Sans', sans-serif; color: #33261A; }
 html { scroll-behavior: smooth; }
 
 image-slot {

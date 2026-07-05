@@ -4,7 +4,7 @@ import '@/components/image-slot';
 
 /* ─── Design palette ─── */
 const C = {
-  cream: "#F7EFDD",
+  cream: "#6B4A2E",
   card: "#FFFDF6",
   border: "#E3D5B8",
   ink: "#33261A",
