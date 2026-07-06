@@ -1,0 +1,116 @@
+{
+  "theme": {
+    "extend": {
+      "colors": {
+        "primary": "#8a3324",
+        "secondary": "#33261a",
+        "tertiary": "#c05f17",
+        "neutral": "#f7efdd",
+        "ink": "#33261a",
+        "body": "#4a3a29",
+        "muted": "#6b5843",
+        "creamText": "#fbf3e0",
+        "barnRedDark": "#6e2819",
+        "pumpkin": "#c05f17",
+        "fallDeep": "#9c470b",
+        "evergreen": "#2f4a33",
+        "brown": "#6b4a2e",
+        "cream": "#f7efdd",
+        "tan": "#f3e7ce",
+        "card": "#fffdf6",
+        "cardBorder": "#e3d5b8",
+        "slotBorder": "#d4c5a0"
+      },
+      "fontFamily": {
+        "h1": [
+          "Besley"
+        ],
+        "h2": [
+          "Besley"
+        ],
+        "h3": [
+          "Besley"
+        ],
+        "kicker": [
+          "Caveat"
+        ],
+        "body-md": [
+          "Nunito Sans"
+        ],
+        "body-sm": [
+          "Nunito Sans"
+        ],
+        "label": [
+          "Nunito Sans"
+        ],
+        "button": [
+          "Nunito Sans"
+        ]
+      },
+      "fontSize": {
+        "h1": [
+          "60px",
+          {
+            "fontWeight": "800"
+          }
+        ],
+        "h2": [
+          "40px",
+          {
+            "fontWeight": "800"
+          }
+        ],
+        "h3": [
+          "22px",
+          {
+            "fontWeight": "700"
+          }
+        ],
+        "kicker": [
+          "26px",
+          {
+            "fontWeight": "700"
+          }
+        ],
+        "body-md": [
+          "17px",
+          {
+            "fontWeight": "400"
+          }
+        ],
+        "body-sm": [
+          "16px",
+          {
+            "fontWeight": "400"
+          }
+        ],
+        "label": [
+          "13px",
+          {
+            "fontWeight": "700"
+          }
+        ],
+        "button": [
+          "15px",
+          {
+            "letterSpacing": "0.02em",
+            "fontWeight": "800"
+          }
+        ]
+      },
+      "borderRadius": {
+        "sm": "12px",
+        "md": "16px",
+        "pill": "999px"
+      },
+      "spacing": {
+        "xs": "6px",
+        "sm": "8px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "section": "80px"
+      }
+    }
+  }
+}

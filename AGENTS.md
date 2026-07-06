@@ -33,3 +33,31 @@ MORE CLI:
   swizzle <Name>     eject component source for deep customization
   upgrade --apply    run after any @astryxdesign/core bump
 <!-- ASTRYX:END -->
+
+<!-- DESIGN.MD:START -->
+# Design tokens — DESIGN.md is the source of truth
+
+`DESIGN.md` (repo root) is the normative Priddy Farms design spec, in Google's
+design.md format. Read it before writing or restyling any UI. Do NOT invent
+new colors, fonts, or radii — every value already has a token there.
+
+Palette (see DESIGN.md for the full ramp + rationale):
+- Barn Red `#8A3324` (primary/hover `#6E2819`), Bark Ink `#33261A`,
+  Pumpkin `#C05F17`, Cream `#F7EFDD` / Tan `#F3E7CE`, Card `#FFFDF6`.
+- Seasonal page backgrounds: Fall `#9C470B`, Christmas `#2F4A33`, Visit `#6B4A2E`.
+- Fonts: Besley (headings), Caveat (kickers/personal), Nunito Sans (body/UI).
+- Pill (999px) is the signature shape; cards 16px; image-slots 12px.
+
+Generated exports (regenerate after editing DESIGN.md — do not hand-edit):
+- `design.tailwind.json`  — Tailwind theme.extend
+- `design.tokens.json`    — W3C DTCG tokens
+
+Commands (via the design-md skill):
+  npx -y @google/design.md lint DESIGN.md
+  npx -y @google/design.md export --format tailwind DESIGN.md > design.tailwind.json
+  npx -y @google/design.md export --format dtcg DESIGN.md > design.tokens.json
+
+Accessibility note: the small fall season-label (Cream on Pumpkin) is 4.22:1,
+just under WCAG AA 4.5:1. Use `fallDeep #9C470B` as the label background if the
+text must pass AA. Verify contrast with `lint` after palette changes.
+<!-- DESIGN.MD:END -->
