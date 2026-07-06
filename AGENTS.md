@@ -42,11 +42,14 @@ design.md format. Read it before writing or restyling any UI. Do NOT invent
 new colors, fonts, or radii — every value already has a token there.
 
 Palette (see DESIGN.md for the full ramp + rationale):
-- Barn Red `#8A3324` (primary/hover `#6E2819`), Bark Ink `#33261A`,
+- Core: Barn Red `#8A3324` (hover `#6E2819`), Bark Ink `#33261A`,
   Pumpkin `#C05F17`, Cream `#F7EFDD` / Tan `#F3E7CE`, Card `#FFFDF6`.
-- Seasonal page backgrounds: Fall `#9C470B`, Christmas `#2F4A33`, Visit `#6B4A2E`.
+- Seasonal pages re-tint bg + accent: Fall `#9C470B` + Gold `#E8B96A`,
+  Christmas `#2F4A33` + Gold, Events Cream + Amber `#DFA032`, Visit Walnut `#6B4A2E`.
+- Greens are role-specific: Evergreen `#2F4A33` = "THE ORIGINAL" badge,
+  Holly `#3A7D44` / Sage `#5C7A4A` for bordered/group labels — don't mix them.
 - Fonts: Besley (headings), Caveat (kickers/personal), Nunito Sans (body/UI).
-- Pill (999px) is the signature shape; cards 16px; image-slots 12px.
+- Pill (999px) is the signature shape; cards 16px (features 20px); slots 12px.
 
 Generated exports (regenerate after editing DESIGN.md — do not hand-edit):
 - `design.tailwind.json`  — Tailwind theme.extend

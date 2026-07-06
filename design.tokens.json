@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
-  "$description": "Two farms, one family — warm, hand-tended Mid-South farm branding that shifts palette by season.",
+  "$description": "Two farms, one family — warm, hand-tended Mid-South farm branding that re-tints by season over a shared cream-and-barn-red base.",
   "color": {
     "$type": "color",
     "primary": {
@@ -47,17 +47,6 @@
         "hex": "#f7efdd"
       }
     },
-    "ink": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.2,
-          0.149,
-          0.102
-        ],
-        "hex": "#33261a"
-      }
-    },
     "body": {
       "$value": {
         "colorSpace": "srgb",
@@ -91,6 +80,17 @@
         "hex": "#fbf3e0"
       }
     },
+    "paleCream": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.937,
+          0.89,
+          0.8
+        ],
+        "hex": "#efe3cc"
+      }
+    },
     "barnRedDark": {
       "$value": {
         "colorSpace": "srgb",
@@ -102,59 +102,15 @@
         "hex": "#6e2819"
       }
     },
-    "pumpkin": {
+    "espresso": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.753,
-          0.373,
-          0.09
+          0.141,
+          0.106,
+          0.071
         ],
-        "hex": "#c05f17"
-      }
-    },
-    "fallDeep": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.612,
-          0.278,
-          0.043
-        ],
-        "hex": "#9c470b"
-      }
-    },
-    "evergreen": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.184,
-          0.29,
-          0.2
-        ],
-        "hex": "#2f4a33"
-      }
-    },
-    "brown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.42,
-          0.29,
-          0.18
-        ],
-        "hex": "#6b4a2e"
-      }
-    },
-    "cream": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.969,
-          0.937,
-          0.867
-        ],
-        "hex": "#f7efdd"
+        "hex": "#241b12"
       }
     },
     "tan": {
@@ -166,6 +122,17 @@
           0.808
         ],
         "hex": "#f3e7ce"
+      }
+    },
+    "paleTint": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.961,
+          0.925,
+          0.835
+        ],
+        "hex": "#f5ecd5"
       }
     },
     "card": {
@@ -199,6 +166,83 @@
           0.627
         ],
         "hex": "#d4c5a0"
+      }
+    },
+    "fallDeep": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.612,
+          0.278,
+          0.043
+        ],
+        "hex": "#9c470b"
+      }
+    },
+    "gold": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.91,
+          0.725,
+          0.416
+        ],
+        "hex": "#e8b96a"
+      }
+    },
+    "amber": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.875,
+          0.627,
+          0.196
+        ],
+        "hex": "#dfa032"
+      }
+    },
+    "evergreen": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.184,
+          0.29,
+          0.2
+        ],
+        "hex": "#2f4a33"
+      }
+    },
+    "holly": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.227,
+          0.49,
+          0.267
+        ],
+        "hex": "#3a7d44"
+      }
+    },
+    "sage": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.361,
+          0.478,
+          0.29
+        ],
+        "hex": "#5c7a4a"
+      }
+    },
+    "walnut": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.42,
+          0.29,
+          0.18
+        ],
+        "hex": "#6b4a2e"
       }
     }
   },
@@ -252,6 +296,12 @@
     "md": {
       "$value": {
         "value": 16,
+        "unit": "px"
+      }
+    },
+    "lg": {
+      "$value": {
+        "value": 20,
         "unit": "px"
       }
     },
@@ -323,13 +373,13 @@
       "$value": {
         "fontFamily": "Nunito Sans",
         "fontSize": {
-          "value": 16,
+          "value": 15,
           "unit": "px"
         },
         "fontWeight": 400
       }
     },
-    "label": {
+    "eyebrow": {
       "$type": "typography",
       "$value": {
         "fontFamily": "Nunito Sans",
@@ -337,7 +387,11 @@
           "value": 13,
           "unit": "px"
         },
-        "fontWeight": 700
+        "fontWeight": 800,
+        "letterSpacing": {
+          "value": 0.1,
+          "unit": "em"
+        }
       }
     },
     "button": {
@@ -345,7 +399,7 @@
       "$value": {
         "fontFamily": "Nunito Sans",
         "fontSize": {
-          "value": 15,
+          "value": 16,
           "unit": "px"
         },
         "fontWeight": 800,

@@ -11,7 +11,7 @@ const C = {
   body: "#EFE3CC",
   muted: "#D4C5A0",
   barnRed: "#8A3324",
-  orange: "#C05F17",
+  orange: "#9C470B",
   tint: "#F5ECD5",
 };
 

@@ -110,7 +110,7 @@ const styles = {
     fontFamily: "'Nunito Sans', 'Arial', sans-serif",
     fontWeight: 700,
     fontSize: "12px",
-    color: "#C05F17",
+    color: "#9C470B",
     background: "#F3E7CE",
     padding: "4px 10px",
     borderRadius: "999px",
@@ -346,7 +346,7 @@ export default function HomePage() {
             {/* Fall Festival */}
             <div style={styles.card}>
               <div style={{ padding: "28px", display: "flex", flexDirection: "column", gap: "12px", textAlign: "center", alignItems: "center" }}>
-                <span style={{ ...styles.seasonLabel, background: "#C05F17", color: "#FFFDF6" }}>OPENS SEPTEMBER 19</span>
+                <span style={{ ...styles.seasonLabel, background: "#9C470B", color: "#FFFDF6" }}>OPENS SEPTEMBER 19</span>
                 <h3 style={{ ...styles.h3, fontSize: "20px" }}>Fall Festival</h3>
                 <p style={{ fontFamily: "'Nunito Sans', 'Arial', sans-serif", fontSize: "15px", color: "#6B5843", margin: 0, lineHeight: 1.5 }}>
                   Pumpkin patch, 5-acre corn maze, hayrides, petting zoo &mdash;
